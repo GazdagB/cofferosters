@@ -1,0 +1,17 @@
+.quality{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.quality::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2C343E;
+    z-index: -1;
+    border-radius: 10px;
+}

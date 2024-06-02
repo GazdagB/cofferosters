@@ -1,0 +1,58 @@
+.App{
+  background-color: #FEFCF7;
+}
+
+.heading{
+ font-family: "Fraunces";
+ font-weight: 900; 
+}
+
+.u-h1{
+  font-family: "Fraunces";
+  font-size: 72px;
+  line-height: 100%;
+  font-weight: 900;
+}
+
+.u-h2{
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900;
+
+}
+
+.u-h3{
+  font-family: "Fraunces";
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+}
+
+.u-h4{
+  font-family: "Fraunces";
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+}
+
+.u-button-text{
+  font-family: "Fraunces";
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 900;
+}
+
+.body, p, div{
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+.nav-text{
+  font-family: "Barlow";
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+}
