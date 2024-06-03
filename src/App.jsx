@@ -8,13 +8,13 @@ import Subscribe from './pages/Subscribe'
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App flex flex-col items-center'>
       <Navbar />
       {/*
     <About />
-    <Home / >
+    <Subscribe/>
   */}
-  <Subscribe/>
+      <Home />
       <Footer />
     </div>
   )

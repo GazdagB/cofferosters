@@ -1,0 +1,28 @@
+.header-fade-out{
+    display: block;
+    z-index: 0;
+    position: relative;
+}
+
+.header-fade-out::after{
+    content: "";
+    background-image: linear-gradient(to top, rgba(254,252,247,1) 5%,rgba(254,252,247,0.6));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 81px;
+    width: 100%;
+    display: inline-block;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1440px){
+    .header-fade-out::after{
+        height: 200%;
+        top: -20px;
+    }
+
+    .header-fade-out{
+        
+    }
+}
