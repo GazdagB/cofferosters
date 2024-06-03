@@ -26,7 +26,7 @@ const Question = ({questions,result}) => {
         </div>
           {
             isOpen && 
-            <div >
+            <div className={`${isOpen ? "openIn": "closeOut"} md:flex md:gap-[10px] `} >
             <a onClick={()=>{handleSelect(0)}}>
               <AnswerCards selected={selected === 0 ? true : false} title={questions.answers[0].title} body={questions.answers[0].body}/>
             </a>

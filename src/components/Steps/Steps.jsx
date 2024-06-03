@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 
-const Steps = () => {
+const Steps = ({circleBg = "#FEFCF7"}) => {
 
     const circleStyles = {
         "borderRadius": "100%",
@@ -8,7 +9,7 @@ const Steps = () => {
         "aspectRatio": "1",
         "border": "2px solid #0E8784", 
         "zIndex": "1",
-        "backgroundColor": "#FEFCF7"
+        "backgroundColor": circleBg
     }
 
     const lineStyles = {

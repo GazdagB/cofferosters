@@ -7,6 +7,7 @@ import bgImageHero from "../assets/plan/mobile/image-hero-blackcup.jpg";
 import HowItCard from "../components/HowItCard";
 import Question from "../components/Question";
 import AnswerCard from "../components/AnswerCard";
+import Steps from "../components/Steps/Steps";
 
 const Subscribe = () => {
   const constants = {
@@ -114,39 +115,40 @@ const Subscribe = () => {
   return (
     <div>
       <PageCard
-        classes={"h-[400px] mb-[125px] mx-[25px]"}
+        classes={"h-[400px] mb-[125px] mx-[25px] md:lg-[689px]"}
         title={constants.heroTitle}
         body={constants.heroBody}
         bgImage={bgImageHero}
       />
 
-      <div className="h-[1200px] w-full bg-[#2C343E] py-[90px] px-[35px] mb-[125px] rounded-[10px]">
-        <HowItCard
-          number={"01"}
-          title={"Pick your coffee"}
-          bodyTxtColor="text-white"
-          body={
-            "Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out."
-          }
-        />
-
-        <HowItCard
-          number={"02"}
-          title={"Choose the frequency"}
-          bodyTxtColor="text-white"
-          body={
-            "Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal."
-          }
-        />
-
-        <HowItCard
-          number={"03"}
-          title={"Receive and enjoy"}
-          bodyTxtColor="text-white"
-          body={
-            "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
-          }
-        />
+      <div className="h-[1200px] w-full bg-[#2C343E] py-[90px] px-[35px] mb-[125px] rounded-[10px] md:h-[640px] md:flex md:flex-col">
+        <div><Steps circleBg="#2C343E"/></div>
+        <div className="flex">
+          <HowItCard
+            number={"01"}
+            title={"Pick your coffee"}
+            bodyTxtColor="text-white"
+            body={
+              "Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out."
+            }
+          />
+          <HowItCard
+            number={"02"}
+            title={"Choose the frequency"}
+            bodyTxtColor="text-white"
+            body={
+              "Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal."
+            }
+          />
+          <HowItCard
+            number={"03"}
+            title={"Receive and enjoy"}
+            bodyTxtColor="text-white"
+            body={
+              "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
+            }
+          />
+        </div>
       </div>
 
       <div className="mx-[25px]">
@@ -157,7 +159,7 @@ const Subscribe = () => {
         <Question result={setOften} questions={constants.questions[4]}/>
       </div>
 
-      <div title="summary" className="summary h-[338px] mb-[56px] p-[27px] rounded-[8px] mx-[25px]">
+      <div title="summary" className="summary h-[338px] mb-[56px] p-[27px] rounded-[8px] mx-[25px] md:h-[208px]">
           <p className="uppercase text-white opacity-[50%] mb-[8px]">order summary</p>
           <p className="u-h4 leading-[40px] text-white">“I drink my coffee as <span className="summary-turkiz">{how}</span>, with a <span className="summary-turkiz">{coffeType}</span> type of bean. <span className="summary-turkiz">{quantity}</span> ground ala <span className="summary-turkiz">{grind}</span>, sent to me <span className="summary-turkiz">{often}</span>.”</p>
       </div>

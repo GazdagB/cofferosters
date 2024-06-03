@@ -11,10 +11,10 @@ function App() {
     <div className='App flex flex-col items-center'>
       <Navbar />
       {/*
-    <About />
-    <Subscribe/>
+    <Home />
+   <About />
   */}
-      <Home />
+  <Subscribe/>
       <Footer />
     </div>
   )

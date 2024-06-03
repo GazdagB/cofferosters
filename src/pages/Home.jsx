@@ -50,7 +50,7 @@ const Home = () => {
             <CoffeBag image={coffeData[3].image} coffeeName={coffeData[3].coffeeName} coffeeText={coffeData[3].coffeeText}  />
         </div>
         <WhyUs />
-        <section className='flex flex-col justify-center items-start md:items-start mb-[120px] w-[327px] md:w-[689px] lg:w-[1045px]'>
+        <section className='flex flex-col justify-center items-center lg:items-start md:items-start mb-[120px] w-[327px] md:w-[689px] lg:w-[1045px]'>
             <h2 className='u-h2 text-[24px] mb-[80px] md:mb-[40px] text-center text-[#83888F] '>How it works</h2>
 
             <div className="hidden md:block">
